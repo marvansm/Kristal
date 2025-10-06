@@ -1,7 +1,19 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import AxiosServices from "../../Api/Axios";
 import Products from "../Components/products";
 
+const api = new AxiosServices("http://localhost:3000/");
+
 const PopularProducts = () => {
+  const [product, setProduct] = useState([]);
+  useEffect(() => {
+    api.getData("houses").then((data) => {
+      if (data) {
+        setProduct(data);
+      }
+    });
+  }, []);
+
   return (
     <div className="bg-[#F6FAFF] pb-[45px]">
       <div className="container mx-auto max-w-[1350px] ">
@@ -9,9 +21,16 @@ const PopularProducts = () => {
           Sizi maraqlandıran layihələr
         </h2>
         <div className="grid grid-cols-3 gap-10">
-          <Products />
-          <Products />
-          <Products />
+          {product &&
+            product.map((item, idx) => (
+              <Products
+                key={idx}
+                image={item?.img}
+                title={item?.name}
+                price={item?.price}
+                location={item?.location}
+              />
+            ))}
         </div>
       </div>
     </div>
