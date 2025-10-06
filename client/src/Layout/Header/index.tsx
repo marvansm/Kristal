@@ -2,8 +2,8 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="container mx-auto max-w-[1340px]">
-      <nav className="grid grid-cols-12 py-[18px] px-[20px]  gap-[40px]">
+    <header className="container mx-auto max-w-[1390px] sticky top-2 bg-white z-50 shadow-md rounded-[25px]">
+      <nav className="grid grid-cols-12 py-[18px] px-[20px]  gap-[40px] ">
         <div className="col-span-7 flex items-center">
           <div className="w-[127px] h-[23.41px]">
             <img
@@ -57,7 +57,10 @@ const Header = () => {
                 <a>Haqqımızda</a>
               </li>
               <li>
-                <a>Xəbərlər</a>
+                <a className="relative">
+                  Xəbərlər
+                  <div className="w-full h-[3px] bg-[#1F9DFF] absolute right-0 -bottom-2"></div>
+                </a>
               </li>
               <li>
                 <a>Karyera</a>
@@ -72,7 +75,7 @@ const Header = () => {
         <div className="col-span-5">
           <div>
             <ul className="flex items-center gap-[15px]">
-              <li className="w-[112px] h-[50px] rounded-[25px] bg-[#F6FAFF] text-[#5B8FFF] font-semibold gap-[7px] flex items-center justify-center">
+              <li className="w-[112px] h-[50px] rounded-[25px] hover:bg-[#DDECFF] duration-300 cursor-pointer bg-[#F6FAFF] text-[#5B8FFF] font-semibold gap-[7px] flex items-center justify-center">
                 <svg
                   width="24"
                   height="25"
@@ -90,7 +93,7 @@ const Header = () => {
                 </svg>{" "}
                 * 1544
               </li>
-              <li className="w-[50px] h-[50px] rounded-[50%] bg-[#F6FAFF] flex items-center justify-center">
+              <li className="w-[50px] h-[50px] rounded-[50%] hover:bg-[#DDECFF] duration-300 cursor-pointer bg-[#F6FAFF] flex items-center justify-center">
                 <svg
                   width="20"
                   height="21"
@@ -114,7 +117,7 @@ const Header = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="w-[50px] h-[50px] rounded-[50%] bg-[#F6FAFF] flex items-center justify-center">
+              <li className="w-[50px] h-[50px] rounded-[50%] hover:bg-[#DDECFF] duration-300 cursor-pointer bg-[#F6FAFF] flex items-center justify-center">
                 <svg
                   width="24"
                   height="24"
@@ -159,7 +162,7 @@ const Header = () => {
                   ></path>
                 </svg>
               </li>
-              <li className="w-[50px] h-[50px] rounded-[50%] bg-[#F6FAFF] flex items-center justify-center">
+              <li className="w-[50px] h-[50px] rounded-[50%] hover:bg-[#DDECFF] duration-300 cursor-pointer bg-[#F6FAFF] flex items-center justify-center">
                 <svg
                   width="24"
                   height="17"
@@ -178,7 +181,7 @@ const Header = () => {
                 </svg>
               </li>
               <li>
-                <div className="bg-[#1F9DFF] px-[22px] h-[50px] flex items-center justify-center gap-[8px] w-[230px] rounded-[25px]">
+                <div className="bg-[#1F9DFF] hover:bg-[#1390EF] cursor-pointer duration-300 px-[22px] h-[50px] flex items-center justify-center gap-[8px] w-[230px] rounded-[25px]">
                   <a>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -233,7 +236,7 @@ const Header = () => {
           </div>
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

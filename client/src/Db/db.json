@@ -48,5 +48,25 @@
       "desc": "Bakı bulvarının düz qarşısında yerləşən Kristal Towers layihəsində yaşayışa hazır, geniş mənzillər satışdadır!",
       "img": "https://kristal.az/site/assets/files/1103/hl-min.jpg"
     }
+  ],
+  "houses": [
+    {
+      "id": 1,
+      "name": "Kristal Biləcəri",
+      "desc": "Kristal Biləcəri layihəsi Bakının sürətlə inkişaf edən Biləcəri qəsəbəsində, əsas yola yaxın ərazidə yerləşir. Layihə 16 mərtəbəli 4 blokdan ibarətdir və ümumi sahəsi 28 000 m² təşkil edir. Kristal Biləcəri layihəsində 1, 2, 3 və 4 otaqlı mənzillər təqdim olunur. Mənzillərin sahəsi 40 m²-dən başlayaraq 120 m²-ə qədərdir.",
+      "img": "https://kristal.az/site/assets/files/1190/lightroom-3-min.jpg"
+    },
+    {
+      "id": 2,
+      "name": "City Garden Nərimanov",
+      "desc": "City Garden Nərimanov layihəsi Bakının mərkəzində, Nərimanov rayonu, Teymur Əliyev küçəsində yerləşir. Layihə 16 mərtəbəli 3 blokdan ibarətdir və ümumi sahəsi 18 000 m² təşkil edir. City Garden Nərimanov layihəsində 1, 2, 3 və 4 otaqlı mənzillər təqdim olunur. Mənzillərin sahəsi 50 m²-dən başlayaraq 150 m²-ə qədərdir.",
+      "img": "https://kristal.az/site/assets/files/1100/py-cover-inside-website_2_-min.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Kristal Towers",
+      "desc": "Kristal Towers layihəsi Bakının ən prestijli ərazilərindən biri olan Səbail rayonu, Neftçilər prospektində yerləşir. Layihə 20 mərtəbəli 2 blokdan ibarətdir və ümumi sahəsi 25 000 m² təşkil edir. Kristal Towers layihəsində 2, 3 və 4 otaqlı mənzillər təqdim olunur. Mənzillərin sahəsi 80 m²-dən başlayaraq 200 m²-ə qədərdir.",
+      "img": "https://kristal.az/site/assets/files/1103/hl-min.jpg"
+    }
   ]
 }
